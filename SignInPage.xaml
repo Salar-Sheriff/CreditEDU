@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SchoolCreditSystem.SignInPage" BackgroundImageSource="background.png" >
+    <StackLayout>
+
+        <Label Margin="0, 150, 0, 0" Text="CREDIT" FontSize="72" TextColor="White" FontAttributes="Bold" FontFamily="Impact" HorizontalTextAlignment="Center"/>
+        <Label Margin="0, 0, 0, 0" Text="EDU" FontSize="72" TextColor="White" FontAttributes="Bold" FontFamily="Impact" HorizontalTextAlignment="Center"/>
+        <Picker x:Name="SchoolIDPicker" Margin="40, 15, 40, 0" Title="Select a School" TitleColor="DarkRed" TextColor="DarkRed"  FontSize="30">
+            <Picker.Items>
+                <x:String>Screaming Eagle Highschool</x:String>
+                <x:String>Bald Eagle Intermediate School</x:String>
+                <x:String>Golden Eagle Elementary School</x:String>
+                <x:String>Tawny Eagle YR Elementary School</x:String>
+                <x:String>Eagle Summer School</x:String>
+            </Picker.Items>
+        </Picker>
+
+
+        <Entry x:Name="StudentIDEntry" Margin="40, 10, 40, 0" Placeholder="Enter Student ID" PlaceholderColor="Gray" TextColor="Black"/>
+
+        <ImageButton x:Name="SignInButton" Margin="0, 30, 0, 0" Source="sign_in_button_c.png" HorizontalOptions="Center" Clicked="SignInButton_Clicked"/>
+        
+    </StackLayout>
+</ContentPage>

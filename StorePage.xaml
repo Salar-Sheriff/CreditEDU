@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SchoolCreditSystem.StorePage" BackgroundImageSource="background.png" Title="Store">
+    <ContentPage.Content>
+
+        <ScrollView>
+            <StackLayout>
+
+                <Label Text="STORE"
+               HorizontalOptions="Center"
+               VerticalTextAlignment="Center"
+               Margin="0,30,0,0"
+               FontSize="50"
+               FontAttributes="Bold"
+               FontFamily="Lobster"
+               TextColor="White"
+               />
+                <Label Text="Pick a category"
+               HorizontalOptions="Center"
+               VerticalTextAlignment="Center"
+               Margin="0,30,0,0"
+               FontSize="28"
+               FontAttributes="Bold"
+               TextColor="White"
+               />
+                <Picker x:Name="picker"
+                TextColor="DarkRed"
+                FontSize="20"
+                Title="Categories"
+                Margin="30, 0, 30, 0"
+                SelectedIndexChanged="OnPickerSelectedIndexChanged"
+                />
+
+
+                <!-- Images first Row -->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="30">
+                    <Image Source="foodCoupon.jpg"
+               x:Name="FirstName"
+               HeightRequest="150"
+               WidthRequest="150"
+               
+               />
+
+                    <Image Source="foodCoupon.jpg"
+               x:Name="SecondName"
+               HeightRequest="150"
+               WidthRequest="150"
+               
+               />
+
+                </StackLayout>
+                <!-- 1st Row Image Labels and Buttons -->
+                <StackLayout Orientation="Horizontal" Spacing="90">
+                    <!-- 1st Image Label and Button -->
+                    <StackLayout Orientation="Vertical" Margin="60, 0, 0, 0">
+
+                        <Label x:Name="FirstItemSubjectLabel"
+               Text="Placeholder"
+               TextColor="White"
+               FontSize="18"
+               />
+                        <ImageButton Clicked="First_Button_Clicked"
+                                     HorizontalOptions="Start"
+                                     Source="AddToCartButton.png"
+                                     WidthRequest="100"/>
+                    </StackLayout>
+                    <!-- 2nd Label and Button -->
+                    <StackLayout Orientation="Vertical" Margin="0,0,30,0">
+
+                        <Label x:Name="SecondItemSubjectLabel"
+                    Text="Placeholder"
+                    TextColor="White"
+                    FontSize="18"
+               
+
+               />
+                        <ImageButton Clicked="Second_Button_Clicked"
+                                     HorizontalOptions="Start"
+                                     Source="AddToCartButton.png"
+                                     WidthRequest="100"/>
+                    </StackLayout>
+                </StackLayout>
+
+
+                <!-- Images second Row -->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center" Spacing="30">
+                    <Image Source="foodCoupon.jpg"
+               x:Name="ThirdName"
+               HeightRequest="150"
+               WidthRequest="150"
+               HorizontalOptions="End"
+               Margin="0,0,0,0"
+               />
+
+                    <Image Source="foodCoupon.jpg"
+               x:Name="FourthName"
+               HeightRequest="150"
+               WidthRequest="150"
+               HorizontalOptions="Start"
+               Margin="0,0,0,0"
+               />
+                </StackLayout>
+
+
+
+                <!-- 2nd Row Labels and Buttons -->
+                <StackLayout Orientation="Horizontal" Spacing="90">
+                    <!-- 1st Label and Button -->
+                    <StackLayout Orientation="Vertical" Margin="70, 0, 0, 0">
+
+                        <Label x:Name="ThirdItemSubjectLabel"
+                        Text="Placeholder"
+                        TextColor="White"
+                        FontSize="18"
+               
+
+               />
+                        <ImageButton Clicked="Third_Button_Clicked"
+                                     HorizontalOptions="Start"
+                                     Source="AddToCartButton.png"
+                                     WidthRequest="100"/>
+                    </StackLayout>
+                    <!-- 2nd Label and Button -->
+                    <StackLayout Orientation="Vertical" Margin="0,0,30,0">
+
+                        <Label x:Name="FourthItemSubjectLabel"
+               Text="Placeholder"
+               TextColor="White"
+               FontSize="18"
+               
+
+               />
+                        <ImageButton Clicked="Fourth_Button_Clicked"
+                                     HorizontalOptions="Start"
+                                     Source="AddToCartButton.png"
+                                     WidthRequest="100"/>
+                    </StackLayout>
+                </StackLayout>
+
+
+                <ImageButton Clicked="Go_To_Cart"
+                             Margin="0, 20, 0, 30"
+                             HorizontalOptions="Center"
+                             Source="ViewCartButton.png"
+                             WidthRequest="100"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

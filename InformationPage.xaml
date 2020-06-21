@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SchoolCreditSystem.InformationPage" BackgroundImageSource="background.png" Title="Updates">
+    <ContentPage.Content>
+
+        <StackLayout>
+
+            <Label Text="Announcements" TextColor="White" FontSize="40" FontAttributes="Bold" HorizontalTextAlignment="Center" Margin="0, 100, 0, 0"/>
+            <ScrollView Margin="0, 50, 0, 0">
+                <StackLayout>
+
+
+                    <Frame HeightRequest="300" BackgroundColor="White" Margin="10, 0, 10, 0" CornerRadius="15">
+
+                        <StackLayout Spacing="30">
+                            <Label Text="Mr. Sheriff on 6/19/20" FontSize="25" FontAttributes="Bold" TextColor="Black"/>
+                            <Label
+                                Text="Here are some quick reminders guys. Registration for the school volunteering service ends today, sign up quickly! Remember to turn in the permission form for the field trip to the State Museum, it's due on 6/20/20 and you do not want to be missing out on this amazing trip."
+                                TextColor="Black"
+                                FontSize="20"/>
+                        </StackLayout>
+                    </Frame>
+
+                    <Frame HeightRequest="300" BackgroundColor="White" Margin="10, 0, 10, 0" CornerRadius="15">
+
+                        <StackLayout Spacing="30">
+                            <Label Text="Mr. Ruparel on 6/18/20" FontSize="25" FontAttributes="Bold" TextColor="Black"/>
+                            <Label
+                                Text="Guys please remember to wear your school colors tommorow for spirit day. All day tommorow we are going to be in the gym or outside participating in fun activities in celebration of spirit day."
+                                TextColor="Black"
+                                FontSize="20"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="300" BackgroundColor="White" Margin="10, 0, 10, 0" CornerRadius="15">
+
+                        <StackLayout Spacing="30">
+                            <Label Text="Mr. Tyagi on 6/17/20" FontSize="25" FontAttributes="Bold" TextColor="Black"/>
+                            <Label
+                                Text="State testing is tommorow so please make sure to charge your laptops. Additionally, do not bring your phone to school tomorrow because you will get into a lot of trouble if it rings during testing. One last thing, have a good nights sleep and eat a good breakfast because you do not want to be hungry or tired during testing."
+                                TextColor="Black"
+                                FontSize="20"/>
+                        </StackLayout>
+                    </Frame>
+                    <Frame HeightRequest="300" BackgroundColor="White" Margin="10, 0, 10, 0" CornerRadius="15">
+
+                        <StackLayout Spacing="30">
+                            <Label Text="Mr. Varshney on 6/17/20" FontSize="25" FontAttributes="Bold" TextColor="Black"/>
+                            <Label
+                                Text="State testing is tommorow so please make sure to charge your laptops. Additionally, do not bring your phone to school tomorrow because you will get into a lot of trouble if it rings during testing. One last thing, have a good nights sleep and eat a good breakfast because you do not want to be hungry or tired during testing."
+                                TextColor="Black"
+                                FontSize="20"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+
+            </ScrollView>
+
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

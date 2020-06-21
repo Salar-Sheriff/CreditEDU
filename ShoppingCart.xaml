@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SchoolCreditSystem.ShoppingCart" BackgroundImageSource="background.png">
+    <ContentPage.Content>
+        <StackLayout Margin="0, 80, 0, 0">
+            <Label Text="Your Cart"
+               FontSize="50"
+               FontAttributes="Bold"
+               TextColor="White"
+               VerticalOptions="Start"
+               HorizontalTextAlignment = "Center"
+               />
+
+
+            <Frame Margin="40, 20, 40, 0">
+                <ListView x:Name="ShoppingCartListView" HeightRequest="500" ItemSelected="ShoppingCartListView_ItemSelected" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Image Source="{Binding image}"
+                                           HeightRequest="40"/>
+                                    <Label Text="{Binding name}" FontSize="15" TextColor="Black" WidthRequest="600" Margin="0,0,0,0"/>
+                                    <Button Text="X" TextColor="Black" 
+                                            FontAttributes="Bold" 
+                                            Margin="50,0,0,0"
+                                            WidthRequest="40"
+                                            Clicked="Remove_Button_Clicked"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+            </Frame>
+
+            <Label x:Name="TotalCostLabel" Text="Total:" TextColor="White" FontSize="30" HorizontalTextAlignment="Center"/>
+           <Button x:Name="RedeemButton" Text="Redeem" BackgroundColor="Green" TextColor="White" WidthRequest="50" FontSize="35" Clicked="RedeemButton_Clicked" />
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

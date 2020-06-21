@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SchoolCreditSystem.ReceiptPage" BackgroundImageSource="background.png" Title="Receipt">
+    <ContentPage.Content>
+
+
+        <StackLayout Margin="0, 80, 0, 0">
+
+            <Frame HeightRequest="125" BackgroundColor="Cyan" Margin="20, 20, 20, 20">
+
+                <StackLayout>
+                    <Label Text="Codes to Redeem" FontAttributes="Bold" FontSize="40"/>
+                    <Label x:Name="CodesToRedeemLabel" Text="402342034"/>
+                </StackLayout>
+
+            </Frame>
+
+
+            <Frame HeightRequest="125" BackgroundColor="White" Margin="20, 20, 20, 20">
+
+                <StackLayout>
+                    <Label Text="Shipping Info" FontAttributes="Bold" FontSize="40"/>
+
+
+
+                    <StackLayout Margin="0, 20, 0, 0" HorizontalOptions="Center">
+
+                        <Label x:Name="FirstNameLabel" FontSize="20" Text="John" HorizontalTextAlignment="Center"/>
+
+                        <Label x:Name="AddressLabel" FontSize="20" Text="14 Cow Lane" HorizontalTextAlignment="Center"/>
+                        
+                    </StackLayout>
+
+                </StackLayout>
+
+            </Frame>
+
+            <Frame HeightRequest="125" BackgroundColor="Cyan" Margin="20, 20, 20, 20">
+
+                <StackLayout>
+                    <Label Text="Credit Status" FontAttributes="Bold" FontSize="40"/>
+
+
+
+                    <StackLayout Margin="0, 20, 0, 0" HorizontalOptions="Center">
+
+                        
+                        <Label x:Name="CreditUseLabel" FontSize="20" Text="Credit use: " HorizontalTextAlignment="Center"/>
+
+                        <Label x:Name="CreditBalanceLabel" FontSize="20" Text="Credit Balance: " HorizontalTextAlignment="Center"/>
+                    </StackLayout>
+
+                </StackLayout>
+
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

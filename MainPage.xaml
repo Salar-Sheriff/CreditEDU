@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SchoolCreditSystem.MainPage">
+    <MasterDetailPage.Master>
+        <ContentPage Title="Master" BackgroundImageSource="menuBackground.png" BackgroundColor="Transparent" IconImageSource="hamburgerMenu.png">
+            <StackLayout>
+
+
+                <StackLayout Margin="10,100,0,0" 
+                             Orientation="Horizontal"
+                             HorizontalOptions="StartAndExpand"
+                             Spacing="30">
+                    <Image Source="profileIcon.png"
+                           HeightRequest="60"></Image>
+                    <Label Text="Dashboard"
+                               TextColor="White"
+                               FontSize="30"
+                               TextDecorations="Underline">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                        Tapped="OnLabelTappedProfile"
+                                        NumberOfTapsRequired="1" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+
+
+
+                <StackLayout Margin="10,50,0,0" 
+                             Orientation="Horizontal"
+                             HorizontalOptions="StartAndExpand"
+                             Spacing="30">
+                    <Image Source="announcementIcon.png"
+                           HeightRequest="60"></Image>
+                    <Label Text="Announcements"
+                               TextColor="White"
+                               FontSize="30"
+                               TextDecorations="Underline">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                        Tapped="OnLabelTappedInformation"
+                                        NumberOfTapsRequired="1" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+
+
+
+
+
+                <StackLayout Margin="10,50,0,0"
+                             Orientation="Horizontal"
+                             HorizontalOptions="StartAndExpand"
+                             Spacing="30">
+                    <Image Source="storefront.png"
+                           HeightRequest="60"></Image>
+                    <Label Text="Store"
+                               HorizontalOptions="Center"
+                               TextColor="White"
+                               FontSize="30"
+                               TextDecorations="Underline">
+
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                        Tapped="OnLabelTappedStore"
+                                        NumberOfTapsRequired="1" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+
+                <StackLayout Margin="10,50,0,0"
+                             Orientation="Horizontal"
+                             HorizontalOptions="StartAndExpand"
+                             Spacing="30">
+                    <Image Source="cartIcon.png"
+                           HeightRequest="60"></Image>
+                    <Label Text="Cart"
+                               HorizontalOptions="Center"
+                               TextColor="White"
+                               FontSize="30"
+                               TextDecorations="Underline">
+
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                        Tapped="OnLabelTappedCart"
+                                        NumberOfTapsRequired="1" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+
+
+                <StackLayout Margin="10,50,0,0"
+                             Orientation="Horizontal"
+                             HorizontalOptions="StartAndExpand"
+                             Spacing="30">
+                    <Image Source="logoutIcon.png"
+                           HeightRequest="60"></Image>
+                    <Label Text="Log Out"
+                               HorizontalOptions="Center"
+                               TextColor="White"
+                               FontSize="30"
+                               TextDecorations="Underline">
+
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer
+                                        Tapped="OnLabelTappedSignOut"
+                                        NumberOfTapsRequired="1" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+</MasterDetailPage>

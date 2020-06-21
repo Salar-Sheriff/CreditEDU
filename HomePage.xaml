@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="SchoolCreditSystem.HomePage" BackgroundImageSource="background.png" Title="Profile">
+    <ContentPage.Content>
+
+
+
+        <ScrollView>
+
+            <StackLayout Margin="0,50,0,0">
+                <StackLayout
+                         Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand"
+                         Spacing="10">
+                    <Label Text="Student Name: "   
+                       TextColor="White" 
+                       FontAttributes="Bold"
+                       FontSize="30"/>
+                    <Label x:Name="StudentNameLabel" Text="Bob"
+                       TextColor="White" 
+                       FontAttributes="Bold" 
+                       FontSize="30"/>
+                </StackLayout>
+
+                <StackLayout 
+                         Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand"
+                         Spacing="30">
+                    <Label Text="Class Rank: "   
+                       TextColor="White" 
+                       FontAttributes="Bold"
+                       FontSize="30"/>
+                    <Label x:Name="ClassRankLabel" Text="27"
+                       TextColor="White" 
+                       FontAttributes="Bold" 
+                       FontSize="30"/>
+                </StackLayout>
+
+                <StackLayout 
+                         Orientation="Horizontal"
+                         HorizontalOptions="CenterAndExpand"
+                         Spacing="30">
+                    <Label Text="Credit Balance:"    
+                       TextColor="White" 
+                       FontAttributes="Bold"
+                       FontSize="30"/>
+                    <Label x:Name="CurrentCreditsLabel" Text="1000"   
+                       TextColor="White" 
+                       FontAttributes="Bold" 
+                       FontSize="30"/>
+                </StackLayout>
+
+                <Grid BackgroundColor="Black"
+                  HorizontalOptions="CenterAndExpand" 
+                  VerticalOptions="StartAndExpand" 
+                  RowSpacing="10" 
+                  ColumnSpacing="10"
+                  Margin="30,50,30,10"
+                  Padding="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*" />
+
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+
+                    </Grid.RowDefinitions>
+
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="0" 
+                       Grid.Row="0">
+                        <Label Text="Catergories"
+                           BackgroundColor="Blue"
+                           TextColor="White" 
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="0" 
+                       Grid.Row="1">
+                        <Label Text="GPA
+                           UnWeighted"   
+                           TextColor="White"
+                           BackgroundColor="Gray"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="0" 
+                       Grid.Row="2">
+                        <Label Text="GPA
+                           Weighted"   
+                           TextColor="White" 
+                           BackgroundColor="Gray"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="0" 
+                       Grid.Row="3">
+                        <Label Text="Credit
+                           Score"   
+                           TextColor="White" 
+                           BackgroundColor="Gray"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="0" 
+                       Grid.Row="4">
+                        <Label Text="Days
+                           Present"   
+                           TextColor="White" 
+                           BackgroundColor="Gray"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="0" 
+                       Grid.Row="5">
+                        <Label Text="Days
+                           Unexcused"   
+                           TextColor="White" 
+                           BackgroundColor="Gray"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="0" 
+                       Grid.Row="6">
+                        <Label Text="Days
+                           Absent"   
+                           TextColor="White" 
+                           BackgroundColor="Gray"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="0" 
+                       Grid.Row="7">
+                        <Label Text="Days
+                           Tardy"   
+                           TextColor="White" 
+                           BackgroundColor="Gray"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="0" 
+                       Grid.Row="8">
+                        <Label Text="Days
+                           Suspended"   
+                           TextColor="White" 
+                           BackgroundColor="Gray"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+
+
+
+
+
+
+
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="1" 
+                       Grid.Row="0">
+                        <Label Text="Points"   
+                           TextColor="White"
+                           BackgroundColor="Blue"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="1" 
+                       Grid.Row="1">
+                        <Label x:Name="GPAUWLabel" Text="895"   
+                           TextColor="White" 
+                           BackgroundColor="Gray"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="1" 
+                       Grid.Row="2">
+                        <Label x:Name="GPAWLabel" Text="700"   
+                           TextColor="White" 
+                           BackgroundColor="Gray"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="1" 
+                       Grid.Row="3">
+                        <Label
+                           x:Name="CreditScoreLabel"
+                           Text="540"   
+                           TextColor="White" 
+                           BackgroundColor="Gray"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="1" 
+                       Grid.Row="4">
+                        <Label x:Name="DaysPresentedLabel"
+                           Text="630"   
+                           TextColor="White" 
+                           BackgroundColor="Gray"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="1" 
+                       Grid.Row="5">
+                        <Label x:Name="DaysUnexcusedLabel"
+                           Text="630"   
+                           TextColor="White" 
+                           BackgroundColor="Gray"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="1" 
+                       Grid.Row="6">
+                        <Label x:Name="DaysAbsentLabel"
+                           Text="630"   
+                           TextColor="White" 
+                           BackgroundColor="Gray"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="1" 
+                       Grid.Row="7">
+                        <Label x:Name="DaysTardyLabel"
+                           Text="630"   
+                           TextColor="White" 
+                           BackgroundColor="Gray"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+                    <Frame Padding="0"
+                       BackgroundColor="white"
+                       Grid.Column="1" 
+                       Grid.Row="8">
+                        <Label x:Name="DaysSuspendedLabel"
+                           Text="630"   
+                           TextColor="White" 
+                           BackgroundColor="Gray"
+                           FontAttributes="Bold" 
+                           FontSize="20"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"/>
+                    </Frame>
+
+                </Grid>
+
+
+
+
+            </StackLayout>
+
+
+        </ScrollView>
+    </ContentPage.Content>
+
+</ContentPage>
